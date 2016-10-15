@@ -1,4 +1,5 @@
 import sys
+import util
 
 
 def read_stdin_integers() -> list:
@@ -22,6 +23,9 @@ def intro_division(integer_list):
     ret.append(integer_list[0]/integer_list[1])
     return(ret)
 
+def execute():
+    write_stdout_anything(intro_division(read_stdin_integers()))
+
 
 if __name__ == '__main__':
-    write_stdout_anything(intro_division(read_stdin_integers()))
+    execute()
